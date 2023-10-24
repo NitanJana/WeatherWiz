@@ -2,7 +2,7 @@ import { format } from "date-fns";
 
 export default async function getWeatherData(query) {
   const weatherObj = {};
-  const url = `http://api.weatherapi.com/v1/forecast.json?key=ee9b377f54554d50bb130814231310&aqi=no&q=${query}`;
+  const url = `https://api.weatherapi.com/v1/forecast.json?key=ee9b377f54554d50bb130814231310&aqi=no&q=${query}`;
   const response = await fetch(url, { mode: "cors" });
   if (!response.ok) {
     if (response.status === 400) {
@@ -12,7 +12,6 @@ export default async function getWeatherData(query) {
     }
   } else {
     const weatherData = await response.json();
-    console.log(weatherData);
     weatherObj.condition = weatherData.current.condition.text;
     weatherObj.area = weatherData.location.name;
     weatherObj.country = weatherData.location.country;
