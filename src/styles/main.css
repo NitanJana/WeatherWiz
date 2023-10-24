@@ -1,0 +1,143 @@
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.weather-info,
+.weather-details {
+  width: 100%;
+  height: 100vh;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.weather-condition-container,
+.weather-location,
+.weather-temp-container {
+  display: flex;
+  align-items: center;
+}
+
+.weather-condition-container {
+  gap: 1rem;
+}
+
+.weather-condition {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.weather-condition-icon {
+  width: 4rem;
+  fill: white;
+}
+
+.weather-location {
+  gap: 0.3rem;
+}
+
+.weather-temp-container {
+  gap: 1rem;
+}
+
+.weather-temp {
+  width: 18rem;
+  font-size: 5rem;
+}
+
+.weather-temp-button {
+  display: flex;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.weather-location {
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.weather-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.weather-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.weather-icon {
+  width: 3rem;
+}
+.weather-time {
+  font-size: 2rem;
+}
+
+.weather-value-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.weather-value {
+  width: 10rem;
+  font-size: 2rem;
+}
+
+.weather-feel-button,
+.weather-wind-button {
+  display: flex;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+@media screen and (min-width:767px) {
+  body {
+    padding: 2rem;
+    gap: 5rem;
+  }
+
+  .main {
+    flex-direction: row;
+    height: 100%;
+  }
+
+  .weather-info,
+  .weather-details {
+    height: 100%;
+    justify-content: flex-start;
+    gap: 1.5rem;
+  }
+
+  .weather-info {
+    width: 75%;
+    padding-left:6rem;
+  }
+
+  .weather-details {
+    width: 45%;
+  }
+
+  .weather-temp-button:hover,
+  .weather-feel-button:hover,
+  .weather-wind-button:hover,
+  .weather-temp-button:active,
+  .weather-feel-button:active,
+  .weather-wind-button:active {
+    background-color: #d8d8d8;
+  }
+}
