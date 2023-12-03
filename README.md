@@ -16,7 +16,8 @@ Welcome to WeatherWiz, your go-to weather app for accurate and real-time weather
 2. [Usage](#usage)
 3. [Tech Stack](#tech-stack)
 4. [Contributing](#contributing)
-5. [License](#license)
+5. [Deployment](#deployment)
+6. [License](#license)
 
 ## Getting Started
 
@@ -80,6 +81,24 @@ Contributions are welcome! Please follow these guidelines:
 1. Fork the repository.
 2. Create a new branch for your feature or bug fix.
 3. Make your changes and submit a pull request.
+
+## Deployment
+
+To deploy this project to GitHub Pages:
+
+1. Build the project:
+
+    ```bash
+    npm run build
+    ```
+
+2. Deploy to GitHub Pages:
+
+    ```bash
+    npm run gh-deploy
+    ```
+
+Your WeatherWiz app is now live at [https://nitanjana.github.io/WeatherWiz/](https://nitanjana.github.io/WeatherWiz/).
 
 ## License
 
